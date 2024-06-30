@@ -10,6 +10,16 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #1b1b1b;
             margin: 20px;
+            display: flex; /* Use flexbox for layout */
+        }
+        .sidebar {
+            width: 200px; /* Width of the sidebar */
+            background-color: #f0f0f0; /* Light gray background for sidebar */
+            padding: 20px;
+        }
+        .content {
+            flex: 1; /* Take remaining space */
+            padding-left: 20px; /* Space between sidebar and content */
         }
         h1 {
             text-align: center;
@@ -22,15 +32,35 @@
         p {
             line-height: 1.6;
         }
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Text color for sidebar links */
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar a:hover {
+            background-color: #ddd; /* Light gray background on hover */
+        }
     </style>
 </head>
 <body>
-    <h1>Hey, I'm Cameron</h1>
-    <h2>About me</h2>
-    <p>I am a coffee addict who enjoys the secondhand cigar smell.</p>
-    <h2>What I'm working on:</h2>
-    <p>Creating a website that offers tech solutions that will grow over time.</p>
-    <h2>What I'm NOT working on:</h2>
-    <p>Caring if it's perfect.</p>
+    <div class="sidebar">
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="notes.html">Notes</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="content">
+        <h1>Hey, I'm Cameron</h1>
+        <h2>About me</h2>
+        <p>I am a coffee addict who enjoys the secondhand cigar smell.</p>
+        <h2>What I'm working on:</h2>
+        <p>Creating a website that offers tech solutions that will grow over time.</p>
+        <h2>What I'm NOT working on:</h2>
+        <p>Caring if it's perfect.</p>
+    </div>
 </body>
 </html>
