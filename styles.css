@@ -26,6 +26,14 @@ body {
     font-family: 'Arial', sans-serif; /* New font family */
     color: #333; /* Dark text color */
     text-decoration: none; /* Remove underline */
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center align items vertically */
+}
+
+.header .brand .brand-image {
+    width: 24px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between image and text */
 }
 
 .header .brand:hover {
