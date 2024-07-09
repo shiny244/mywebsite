@@ -5,63 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Cameron's Website</title>
-    <style>
-        body {
-            background-color: white; /* Change background color to white */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #1b1b1b;
-            margin: 20px;
-            display: flex; /* Use flexbox for layout */
-        }
-        .sidebar {
-            width: 200px; /* Width of the sidebar */
-            background-color: #f0f0f0; /* Light gray background for sidebar */
-            padding: 20px;
-        }
-        .content {
-            flex: 1; /* Take remaining space */
-            padding-left: 20px; /* Space between sidebar and content */
-        }
-        h1 {
-            text-align: center;
-            color: rgb(49, 49, 131); /* Make h1 headers blue */
-        }
-        h2 {
-            margin-top: 20px;
-            color: rgb(49, 49, 131); /* Make h2 headers blue */
-        }
-        p {
-            line-height: 1.6;
-        }
-        .sidebar a {
-            display: block;
-            margin-bottom: 10px;
-            color: #333; /* Text color for sidebar links */
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .sidebar a:hover {
-            background-color: #ddd; /* Light gray background on hover */
-        }
-    </style>
 </head>
 <body>
-    <div class="sidebar">
-        <a href="projects.html">Projects</a>
-        <a href="news.html">News</a>
-        <a href="notes.html">Notes</a>
-        <a href="about.html">About</a>
+    <div class="header">
+        <div class="brand">
+            <a href="#">Cameron Dillinger</a>
+        </div>
+        <ul class="tabs">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#notes">Notes</a></li>
+        </ul>
     </div>
+
     <div class="content">
-        <h1>Hey, this is where we Test</h1>
-        <h2>About me</h2>
-        <p>I am a coffee addict who enjoys the secondhand cigar smell.</p>
-        <h2>What I'm working on:</h2>
-        <p>Creating a website that offers tech solutions that will grow over time.</p>
-        <h2>What I'm NOT working on:</h2>
-        <p>Caring if it's perfect.</p>
+        <div id="about">
+            <h1>About Me</h1>
+            <p>I am a coffee addict who enjoys the secondhand cigar smell.</p>
+        </div>
+
+        <div id="projects">
+            <h1>Projects</h1>
+            <p>Creating a website that offers tech solutions that will grow over time.</p>
+        </div>
+
+        <div id="news">
+            <h1>News</h1>
+            <p>Stay updated with the latest news.</p>
+        </div>
+
+        <div id="notes">
+            <h1>Notes</h1>
+            <p>Some notes about various topics.</p>
+        </div>
     </div>
 </body>
 </html>
