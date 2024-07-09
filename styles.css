@@ -23,6 +23,7 @@ body {
 .header .brand {
     font-size: 1.2rem; /* Adjust font size */
     font-weight: bold; /* Bold text */
+    font-family: 'Arial', sans-serif; /* New font family */
     color: #333; /* Dark text color */
     text-decoration: none; /* Remove underline */
 }
@@ -36,6 +37,9 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* Use flexbox for tabs */
+    justify-content: center; /* Center tabs horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-top: 10px; /* Adjust top margin for tabs */
 }
 
 .tabs li {
@@ -61,7 +65,7 @@ body {
 }
 
 .content {
-    margin-top: 60px; /* Adjust top margin to account for fixed header */
+    margin-top: 100px; /* Adjust top margin to account for fixed header */
     padding: 20px; /* Add padding inside content */
     background-color: #ffffff; /* White background for content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for content */
