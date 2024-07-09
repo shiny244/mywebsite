@@ -1,28 +1,34 @@
 /* Reset default browser styling */
 body {
-    background-color: white; /* Change background color to white */
+    background-color: #f2f2f2; /* Light gray background */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #1b1b1b;
+    color: #333; /* Dark text color */
     margin: 0;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
+    padding: 0;
 }
 
 .header {
-    width: 100%; /* Take full width */
-    background-color: #f0f0f0; /* Light gray background for header */
+    background-color: #ffffff; /* White background for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for header */
     padding: 10px 20px; /* Padding inside header */
     display: flex; /* Use flexbox for header content */
     justify-content: space-between; /* Space items evenly */
     align-items: center; /* Center align items vertically */
     position: fixed; /* Fixed position to stay at the top */
     top: 0; /* Stick to the top */
+    width: 100%; /* Take full width */
     z-index: 1000; /* Ensure it's above other content */
 }
 
 .header .brand {
     font-size: 1.2rem; /* Adjust font size */
     font-weight: bold; /* Bold text */
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.header .brand:hover {
+    color: #555; /* Darker text color on hover */
 }
 
 .tabs {
@@ -33,7 +39,11 @@ body {
 }
 
 .tabs li {
-    margin-right: 10px; /* Right margin between tabs */
+    margin-right: 15px; /* Right margin between tabs */
+}
+
+.tabs li:last-child {
+    margin-right: 0; /* No margin on the last tab */
 }
 
 .tabs li a {
@@ -42,25 +52,29 @@ body {
     color: #333; /* Text color */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 .tabs li a:hover {
-    background-color: #ddd; /* Light gray background on hover */
+    background-color: #eaeaea; /* Light gray background on hover */
+    color: #555; /* Darker text color on hover */
 }
 
 .content {
     margin-top: 60px; /* Adjust top margin to account for fixed header */
     padding: 20px; /* Add padding inside content */
+    background-color: #ffffff; /* White background for content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for content */
 }
 
 .content h1 {
     text-align: center; /* Center align h1 headers */
-    color: rgb(49, 49, 131); /* Blue color for h1 headers */
+    color: #333; /* Dark text color */
 }
 
 .content h2 {
     margin-top: 20px; /* Add top margin for h2 headers */
-    color: rgb(49, 49, 131); /* Blue color for h2 headers */
+    color: #333; /* Dark text color */
 }
 
 .content p {
