@@ -1,12 +1,12 @@
-// script.js
+// header.js
 
 // Initialize options with predefined values
 const options = [
-    { name: 'Home', href: 'index.html' },
-    { name: 'Projects', href: '#' },
-    { name: 'Notes', href: '#' },
-    { name: 'News', href: '#' },
-    { name: 'About', href: '#' }
+    { name: 'Cameron Dillinger', href: 'index.html' },
+    { name: 'Projects', href: 'projects.html' },
+    { name: 'Notes', href: 'notes.html' },
+    { name: 'News', href: 'news.html' },
+    { name: 'About', href: 'about.html' }
 ];
 
 // Function to render the options
